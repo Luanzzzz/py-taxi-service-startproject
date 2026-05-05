@@ -14,7 +14,7 @@ class Driver(AbstractUser):
     license_number = models.CharField(max_length=255, unique=True)
 
     def __str__(self):
-        return f"{self.username} ({self.first_name} {self.last_name})"
+        return self.username
 
 class Car(models.Model):
     model = models.CharField(max_length=255, unique=True)
