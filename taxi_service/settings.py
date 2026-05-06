@@ -37,7 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'taxi_app',
+    'taxi',
 ]
 
 MIDDLEWARE = [
@@ -118,4 +118,4 @@ USE_TZ = True
 STATIC_URL = 'static/'
 
 
-AUTH_USER_MODEL = 'taxi_app.Driver'
+AUTH_USER_MODEL = 'taxi.Driver'

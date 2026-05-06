@@ -58,7 +58,7 @@ class Migration(migrations.Migration):
                 ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
                 ('model', models.CharField(max_length=255, unique=True)),
                 ('drivers', models.ManyToManyField(related_name='cars', to=settings.AUTH_USER_MODEL)),
-                ('manufacture', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='cars', to='taxi_app.manufacturer')),
+                ('manufacturer', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='cars', to='taxi.manufacturer')),
             ],
         ),
     ]

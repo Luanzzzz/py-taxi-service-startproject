@@ -4,6 +4,7 @@ from .models import Manufacturer, Car, Driver
 
 @admin.register(Driver)
 class DriverAdmin(UserAdmin):
+    list_display = UserAdmin.list_display + ("license_number",)
 
     fieldsets = UserAdmin.fieldsets + (
         ("Additional info", {"fields": ("license_number",)}),
